@@ -17,16 +17,18 @@ const Header = ({ channel, setChannel }) => {
   };
   const today = new Date();
   const options = { month: "short", day: "numeric", year: "numeric" };
-  const formatted = today.toLocaleDateString("en-US", options);
+  const formatted = today
+    .toLocaleDateString("en-US", options)
+    .replace(/, /g, " ");
   return (
     <div className="absolute top-0 w-full z-20 text-white">
-      <div className=" flex justify-between py-6 px-6">
+      <div className=" flex justify-between py-7 px-4 md:px-6">
         <Link href={"/"}>
           <Logo />
         </Link>
-        <div className={`${myFont.className} text-right`}>
-          <p className="uppercase text-lg mb-[-2px]">{formatted}</p>
-          <div className="flex items-center gap-4 uppercase text-lg ">
+        <div className={`${myFont.className} text-right text-lg md:text-xl`}>
+          <p className="uppercase  mb-[-4px] md:mb-[-2px]">{formatted}</p>
+          <div className="flex items-center gap-2 md:gap-4  uppercase  ">
             <button onClick={handlePreviousChannel}>
               <LeftSVG />
             </button>
