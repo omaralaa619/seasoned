@@ -29,7 +29,7 @@ const Marquee = () => {
     </p>,
   ];
   return (
-    <div className="absolute h-10   bottom-4  mx-auto text-white ">
+    <div className="absolute h-10   bottom-4  mx-auto text-white overflow-x-hidden">
       <MarqueeItem images={upperMarquee} from={0} to={"-100%"} />
     </div>
   );
