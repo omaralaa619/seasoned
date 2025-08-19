@@ -4,6 +4,7 @@ import Header from "./Header";
 import { useState } from "react";
 import Video from "./Video";
 import FuzzyOverlay from "./FuzzyOverlay";
+import Marquee from "./marquee/Marquee";
 
 const Hero = () => {
   const [channel, setChannel] = useState(1);
@@ -34,6 +35,7 @@ const Hero = () => {
       </div>
 
       <Video channel={channel} />
+      <Marquee />
     </div>
   );
 };

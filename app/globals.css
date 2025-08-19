@@ -25,6 +25,7 @@ body {
 .arrow {
   height: 10px;
   width: 8px;
+  fill: rgb(212, 212, 212);
 }
 
 @layer utilities {

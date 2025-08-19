@@ -21,8 +21,8 @@ const Header = ({ channel, setChannel }) => {
     .toLocaleDateString("en-US", options)
     .replace(/, /g, " ");
   return (
-    <div className="absolute top-0 w-full z-20 text-white">
-      <div className=" flex justify-between py-7 px-4 md:px-6">
+    <div className="absolute top-0 w-full z-20 text-neutral-300  ">
+      <div className=" flex justify-between items-center py-4 px-4 md:px-7 md:py-7 md:items-start">
         <Link href={"/"}>
           <Logo />
         </Link>
