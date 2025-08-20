@@ -1,6 +1,6 @@
 import localFont from "next/font/local";
 import "./globals.css";
-import FuzzyOverlay from "@/components/FuzzyOverlay";
+import FuzzyOverlay from "@/components/ui/FuzzyOverlay";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",

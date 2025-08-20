@@ -1,9 +1,15 @@
-import Hero from "@/components/Hero";
+import Hero from "@/components/hero/Hero";
+import SecondSection from "@/components/secondSection/SecondSection";
+import StarSVG from "@/SVGS/StarSVG";
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="min-h-[200vh]">
+    <div>
       <Hero />
+      <div className="bg-gradient min-h-[550vh]">
+        <SecondSection />
+      </div>
     </div>
   );
 }

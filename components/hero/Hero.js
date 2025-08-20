@@ -3,8 +3,8 @@ import Image from "next/image";
 import Header from "./Header";
 import { useState } from "react";
 import Video from "./Video";
-import FuzzyOverlay from "./FuzzyOverlay";
-import Marquee from "./marquee/Marquee";
+import FuzzyOverlay from "../ui/FuzzyOverlay";
+import Marquee from "../ui/marquee/Marquee";
 
 const Hero = () => {
   const [channel, setChannel] = useState(1);

@@ -28,6 +28,28 @@ body {
   fill: rgb(212, 212, 212);
 }
 
+.bg-gradient {
+  background: url("https://seasoned.koto.studio/wp-content/themes/seasoned/assets/home/gradient-mobile.avif")
+    no-repeat center center;
+  background-size: cover;
+}
+
+.secondText {
+  color: #572c21;
+}
+.double-border {
+  border: 2px solid black; /* inner border */
+  outline: 6px solid transparent; /* gap */
+  box-shadow: 0 0 0 2px black; /* outer border */
+}
+@media (min-width: 768px) {
+  .bg-gradient {
+    background: url("https://seasoned.koto.studio/wp-content/themes/seasoned/assets/home/gradient-desktop.avif")
+      no-repeat center center;
+    background-size: cover;
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
