@@ -6,7 +6,7 @@ const furnaces = localFont({
 });
 const SecondSection = () => {
   return (
-    <div className="md:flex relative md:overflow-hidden md:px-36 md:py-20 gap-20 md:flex-row-reverse items-center max-w-[1700px] md:m-auto 2xl:py-40">
+    <div className="md:flex relative md:overflow-hidden md:px-36 md:py-20 gap-20 md:flex-row-reverse items-center max-w-[1700px] md:m-auto 2xl:py-40 border-4 border-white">
       <div className="text-center px-8 pb-12 pt-20 flex-1 md:text-left">
         <p
           className={`font-semibold  text-5xl md:text-7xl 2xl:text-9xl ${furnaces.className} secondText mb-5`}
@@ -21,8 +21,7 @@ const SecondSection = () => {
           together.
         </p>
       </div>
-
-      <div className="flex-1 absolute left-1/2 -translate-x-1/2 w-[115vw] aspect-[4/5] rounded-[50%] border border-amber-950 p-[3px] flex items-center justify-center md:w-full md:hidden ">
+      <div className="flex-1 scale-[1.15] aspect-[4/5] rounded-[50%] border border-amber-950 p-[3px] flex items-center justify-center md:w-full md:hidden ">
         <div className="w-full h-full rounded-[50%] border border-amber-950 p-1 flex items-center justify-center">
           <div className="w-full h-full rounded-[50%] border-2 border-amber-950 overflow-hidden relative">
             <Image
@@ -36,8 +35,7 @@ const SecondSection = () => {
           </div>
         </div>
       </div>
-
-      <div className="flex-1 aspect-[4/5] rounded-[50%]   border border-amber-950 p-[3px] flex items-center justify-center ">
+      <div className="hidden flex-1 aspect-[4/5] rounded-[50%]   border border-amber-950 p-[3px] md:flex items-center justify-center ">
         <div className="w-full h-full rounded-[50%] border border-amber-950 p-1 flex items-center justify-center">
           <div className="w-full h-full rounded-[50%] border-2 border-amber-950 overflow-hidden relative">
             <Image
@@ -51,8 +49,10 @@ const SecondSection = () => {
           </div>
         </div>
       </div>
-
-      <div className="absolute  w-5 h-5  z-10 left-[15%] top-[10%]">
+      <div className="absolute fill-yellow-500  w-5 h-5  z-10 right-[10%] top-[5%]">
+        <StarSVG />
+      </div>
+      <div className="absolute fill-yellow-300/50  w-20 h-20  z-10 left-[0] top-[50%]">
         <StarSVG />
       </div>
     </div>

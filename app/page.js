@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div>
       <Hero />
-      <div className="bg-gradient min-h-[550vh]">
+      <div className="bg-gradient min-h-[550vh] overflow-hidden">
         <SecondSection />
       </div>
     </div>

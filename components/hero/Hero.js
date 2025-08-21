@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <div className="h-[100svh] w-full  bg-slate-600 relative overflow-hidden">
       <div className="text-red-600 z-20">Home</div>
-      <FuzzyOverlay />
+      {/* <FuzzyOverlay /> */}
 
       <Header channel={channel} setChannel={setChannel} />
 
