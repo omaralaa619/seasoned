@@ -1,12 +1,19 @@
+"use client";
 import Image from "next/image";
 import localFont from "next/font/local";
 import StarSVG from "@/SVGS/StarSVG";
+import Stars from "./Stars";
+import { useRef } from "react";
 const furnaces = localFont({
   src: "../../public/Fraunces.ttf",
 });
 const SecondSection = () => {
+  const parentRef = useRef(null);
   return (
-    <div className="md:flex relative md:overflow-hidden md:px-36 md:py-20 gap-20 md:flex-row-reverse items-center max-w-[1700px] md:m-auto 2xl:py-40 border-4 border-white">
+    <div
+      ref={parentRef}
+      className="md:flex relative md:overflow-hidden md:px-36 md:py-20 gap-20 md:flex-row-reverse items-center max-w-[1700px] md:m-auto 2xl:py-40 border-4 border-white"
+    >
       <div className="text-center px-8 pb-12 pt-20 flex-1 md:text-left">
         <p
           className={`font-semibold  text-5xl md:text-7xl 2xl:text-9xl ${furnaces.className} secondText mb-5`}
@@ -49,12 +56,7 @@ const SecondSection = () => {
           </div>
         </div>
       </div>
-      <div className="absolute fill-yellow-500  w-5 h-5  z-10 right-[10%] top-[5%]">
-        <StarSVG />
-      </div>
-      <div className="absolute fill-yellow-300/50  w-20 h-20  z-10 left-[0] top-[50%]">
-        <StarSVG />
-      </div>
+      <Stars parentRef={parentRef} />
     </div>
   );
 };
