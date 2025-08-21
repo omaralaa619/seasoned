@@ -12,7 +12,7 @@ const SecondSection = () => {
   return (
     <div
       ref={parentRef}
-      className="md:flex relative md:overflow-hidden md:px-36 md:py-20 gap-20 md:flex-row-reverse items-center max-w-[1700px] md:m-auto 2xl:py-40 border-4 border-white"
+      className="md:flex relative md:overflow-hidden md:px-36 md:py-20 gap-20 md:flex-row-reverse items-center max-w-[1700px] md:m-auto 2xl:py-40 "
     >
       <div className="text-center px-8 pb-12 pt-20 flex-1 md:text-left">
         <p
