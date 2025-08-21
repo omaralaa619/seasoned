@@ -3,7 +3,10 @@ import StarSVG from "@/SVGS/StarSVG";
 import { useScroll, useTransform, motion } from "framer-motion";
 
 const Stars = ({ parentRef }) => {
-  const { scrollYProgress } = useScroll({ target: parentRef });
+  const { scrollYProgress } = useScroll({
+    target: parentRef,
+    offset: ["start end", "end start"],
+  });
   const rotate = useTransform(scrollYProgress, [0, 1], ["0deg", "200deg"]);
 
   const rotateBig = useTransform(scrollYProgress, [0, 1], ["0deg", "30deg"]);

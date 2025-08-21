@@ -15,7 +15,8 @@ const BooksSection = () => {
         />
         <img
           src="https://seasoned.koto.studio/wp-content/themes/seasoned/assets/svg/home/our-best-cookbooks-desktop.svg"
-          alt="hidden md:block"
+          className="hidden md:block"
+          alt=""
         />
 
         <p
