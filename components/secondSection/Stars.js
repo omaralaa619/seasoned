@@ -11,13 +11,13 @@ const Stars = ({ parentRef }) => {
   return (
     <div>
       <motion.div
-        className="absolute fill-yellow-500/70 w-5 h-5 z-10 right-[10%] top-[5%]"
+        className="absolute fill-yellow-500/70 w-5 h-5 z-10 right-[10%] top-[5%] md:top-[15%]"
         style={{ rotate }}
       >
         <StarSVG />
       </motion.div>
       <motion.div
-        className="absolute fill-yellow-500/70 w-20 h-20 left-[0] "
+        className="absolute fill-yellow-500/70 w-20 h-20 left-[0] md:top[10%] md:left-[10%]"
         style={{ rotate: rotateBig, top: topBig }}
       >
         <StarSVG />
