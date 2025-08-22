@@ -1,4 +1,5 @@
 import localFont from "next/font/local";
+import Books from "./Books";
 
 const furnaces = localFont({
   src: "../../public/Fraunces.ttf",
@@ -26,6 +27,8 @@ const BooksSection = () => {
           a career in branding.
         </p>
       </div>
+
+      <Books />
     </div>
   );
 };

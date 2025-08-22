@@ -1,0 +1,38 @@
+ const books = [
+    {
+      cover:
+        "https://seasoned.koto.studio/wp-content/uploads/2025/01/book1-cover-comp.avif",
+      back: "https://seasoned.koto.studio/wp-content/uploads/2025/01/book1-back-comp.avif",
+      spineLeft:
+        "https://seasoned.koto.studio/wp-content/uploads/2025/01/book1-spine-comp.avif",
+      spineRight:
+        "https://seasoned.koto.studio/wp-content/uploads/2025/01/book1-pages-comp.avif",
+    },
+    {
+      cover:
+        "https://seasoned.koto.studio/wp-content/uploads/2025/01/book2-cover-comp.avif",
+      back: "https://seasoned.koto.studio/wp-content/uploads/2025/01/book2-back-comp.avif",
+      spineLeft:
+        "https://seasoned.koto.studio/wp-content/uploads/2025/01/book2-spine-comp.avif",
+      spineRight:
+        "https://seasoned.koto.studio/wp-content/uploads/2025/01/book2-pages-comp.avif",
+    },
+    {
+      cover:
+        "https://seasoned.koto.studio/wp-content/uploads/2024/10/book3-front.avif",
+      back: "https://seasoned.koto.studio/wp-content/uploads/2024/10/book3-back-2.jpg",
+      spineLeft:
+        "https://seasoned.koto.studio/wp-content/uploads/2024/10/book3-spine-1-scaled.avif",
+      spineRight:
+        "https://seasoned.koto.studio/wp-content/uploads/2024/10/book3-pages.avif",
+    },
+    {
+      cover:
+        "https://seasoned.koto.studio/wp-content/uploads/2024/10/book4-cover-2.avif",
+      back: "https://seasoned.koto.studio/wp-content/uploads/2024/10/book4-back-1.avif",
+      spineLeft:
+        "https://seasoned.koto.studio/wp-content/uploads/2024/10/book4-spine-1.avif",
+      spineRight:
+        "https://seasoned.koto.studio/wp-content/uploads/2024/10/book4-pages.avif",
+    },
+  ];
