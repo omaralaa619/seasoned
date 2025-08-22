@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div>
       <Hero />
-      <div className="bg-gradient md:min-h-[650vh] min-h-[700vh] ">
+      <div className="bg-gradient  h-[800vh]">
         <SecondSection />
         <BooksSection />
       </div>
